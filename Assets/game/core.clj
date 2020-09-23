@@ -13,6 +13,7 @@
         (l/v3+ (.. go transform position)
                v3)))
 
+
 (defn def-move!
    [go _]
   (let [offset (Vector3. -0.00 0 0)]
