@@ -16,7 +16,7 @@
 
 (defn def-move!
    [go _]
-  (let [offset (Vector3. -0.00 0 0)]
+  (let [offset (Vector3. 0.00 0 0)]
     (move! go offset)))
 
 (hook+ c :update :move #'def-move! )
