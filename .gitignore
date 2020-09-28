@@ -3,3 +3,4 @@ Library/
 .DS_Store
 *.meta
 Assets/clojure-complete
+Temp/
