@@ -1,9 +1,7 @@
 (ns game.movement
   (:require [arcadia.core :refer :all]
             [arcadia.linear :as l]
-            [arcadia.introspection :as i])
-  (:import [UnityEngine Application
-            QualitySettings]))
+            [arcadia.introspection :as i]))
 
 
 (defn move!
@@ -16,3 +14,4 @@
           :default (log (str "No speed set for" k)))]
     (set! (.. go transform position)
           (l/v3+ old-pos velocity))))
+
